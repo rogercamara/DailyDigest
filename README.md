@@ -1,5 +1,5 @@
 
-# 🌅 DailyDigest
+#  DailyDigest
 
 O **DailyDigest** coleta automaticamente as principais notícias do dia, salva em um banco **PostgreSQL** via **Prisma** e envia uma **Newsletter diária** com visual profissional, utilizando **Next.js**, **Resend** e **Vercel Cron**.  
 
@@ -7,7 +7,7 @@ Depois de configurado, você receberá um email periodicamente com notícias col
 
 ---
 
-## 🔑 Serviços Necessários
+##  Serviços Necessários
 
 Você precisará criar contas gratuitas nestes serviços:
 
@@ -53,7 +53,7 @@ RECIPIENTS_CSV=alice@empresa.com,bob@empresa.com
 
 ---
 
-## 🖥️ Rodando Localmente
+##  Rodando Localmente
 
 ```bash
 # 1. Instale dependências
@@ -73,7 +73,7 @@ npm run dev
 
 ---
 
-## ☁️ Deploy na Vercel
+## ☁ Deploy na Vercel
 
 1. Suba o repositório no GitHub/GitLab.  
 2. Importe na **Vercel**.  
@@ -85,7 +85,7 @@ npm run dev
 
 ---
 
-## 📦 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 src/
