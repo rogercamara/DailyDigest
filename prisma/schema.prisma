@@ -1,0 +1,31 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Article {
+  id           String   @id @default(cuid())
+  url          String   @unique
+  urlHash      String   @unique
+  source       String?
+  title        String
+  summary      String?
+  imageUrl     String?
+  publishedAt  DateTime?
+  fetchedAt    DateTime @default(now())
+  sent         Boolean  @default(false)
+  @@index([publishedAt(sort: Desc)])
+}
+
+model EmailLog {
+  id          String   @id @default(cuid())
+  subject     String
+  sentAt      DateTime @default(now())
+  recipients  String
+  count       Int
+}
